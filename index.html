@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethan Nacarate | Portafolio Fundamentos Web</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body> 
+
+    <header class="header">
+        <a href="#" class="logo">Ethan Nacarate</a>
+        <i class="fas fa-bars" id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#inicio" class="active">Inicio</a>
+            <a href="#sobre-mi">Sobre Mí</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#educacion">Educación</a>
+            <a href="#experiencia">Experiencia</a>
+            <a href="#portafolio">Proyectos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <section class="inicio" id="inicio">
+        <div class="inicio-contenido">
+            <h3>¡Hola, mi nombre es!</h3>
+            <h1>Ethan Nacarate</h1>
+            <p>Este es mi portafolio de progreso. Aquí documento mi aprendizaje en HTML, CSS y JavaScript.</p>
+            <div class="social-media">
+                <a href="https://github.com/ethannacarate" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <a href="#portafolio" class="btn">Ver Proyectos</a>
+        </div>
+        <div class="inicio-img">
+            <img src="static/recursos/img/Imagen de WhatsApp 2025-10-31 a las 14.13.28_cb4c88e0.jpg"> 
+        </div>
+    </section>
+
+    <section class="sobre-mi" id="sobre-mi">
+        <h2 class="heading">Sobre <span>Mí</span></h2>
+        <div class="sobre-mi-contenido">
+            <h3>Mi Trayectoria Académica</h3>
+            <p>Soy un estudiante enfocado en el desarrollo web. Este portafolio sirve como bitácora de mi avance, mostrando los proyectos que he completado aplicando conceptos de HTML, CSS y JavaScript.</p>
+            <a href="https://github.com/ethannacarate/fundamentos-web-4c" class="btn" target="_blank">Ver Repositorio del Curso</a>
+        </div>
+    </section>
+
+    <section class="habilidades" id="habilidades">
+        <h2 class="heading">Mis <span>Habilidades</span></h2>
+        <div class="habilidades-contenedor">
+            <div class="habilidad-box" onmouseover="resaltarHabilidad(this)" onmouseout="restaurarHabilidad(this)">
+                <i class="fab fa-html5"></i>
+                <h3>HTML5</h3>
+                <p>Estructura semántica, formularios y organización de contenido web.</p>
+            </div>
+            <div class="habilidad-box" onmouseover="resaltarHabilidad(this)" onmouseout="restaurarHabilidad(this)">
+                <i class="fab fa-css3-alt"></i>
+                <h3>CSS y Flexbox</h3>
+                <p>Diseño, maquetación con Flexbox, y adaptabilidad con Media Queries.</p>
+            </div>
+            <div class="habilidad-box" onmouseover="resaltarHabilidad(this)" onmouseout="restaurarHabilidad(this)">
+                <i class="fab fa-js-square"></i>
+                <h3>JavaScript</h3>
+                <p>Manipulación del DOM, eventos, y lógica para interactividad.</p>
+            </div>
+            <div class="habilidad-box" onmouseover="resaltarHabilidad(this)" onmouseout="restaurarHabilidad(this)">
+                <i class="fab fa-bootstrap"></i>
+                <h3>Bootstrap</h3>
+                <p>Uso de grillas, componentes y utilidades para diseño responsivo.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="educacion" id="educacion">
+        <h2 class="heading">Mi <span>Educación</span></h2>
+        <div class="educacion-contenido">
+            <h4>Liceo Comercial Vate Vicente Huidobro</h4>
+            <p><strong>Especialidad:</strong> Programación | <strong>Año de Egreso:</strong> 2025</p>
+            <ul>
+                <li>Participación en proyectos de desarrollo web front-end.</li>
+                <li>Formación en lógica de programación y bases de datos.</li>
+            </ul>
+        </div>
+    </section>
+    
+    <section class="experiencia" id="experiencia">
+        <h2 class="heading">Mi <span>Experiencia</span></h2>
+        <div class="experiencia-contenido">
+            <h4>Proyecto Académico: Portafolio Personal</h4>
+            <p><strong>Rol:</strong> Desarrollador Front-End | <strong>Periodo:</strong> 2025</p>
+            <p>Desarrollo completo de un sitio web de portafolio utilizando HTML, CSS y JavaScript, aplicando conceptos de diseño responsivo y manipulación del DOM.</p>
+        </div>
+    </section>
+
+    <section class="portafolio" id="portafolio">
+        <h2 class="heading">Mis <span>Proyectos</span></h2>
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card portafolio-box h-100">
+                        <img src="static/recursos/img/Captura de pantalla 2025-10-31 140900.png" class="card-img-top" alt="Proyecto Semana 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Réplica de Página Web</h5>
+                            <p class="card-text">Ejercicio inicial de maquetación con HTML y CSS.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://github.com/ethannacarate/rey-hamburguesa2" class="btn btn-sm" target="_blank">Ver Código</a>
+                            <i class="fas fa-trash-alt remover-icono" onclick="removerProyecto(this)" title="Remover este proyecto"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card portafolio-box h-100">
+                        <img src="static/recursos/img/Captura de pantalla 2025-10-31 140354.png" class="card-img-top" alt="Proyecto Semana 11">
+                        <div class="card-body">
+                            <h5 class="card-title">Proyecto con JS</h5>
+                            <p class="card-text">Aplicación de lógica de JavaScript</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://github.com/ethannacarate/fundamentos-web-4c/tree/main/2.0" class="btn btn-sm" target="_blank">Ver Código</a>
+                            <i class="fas fa-trash-alt remover-icono" onclick="removerProyecto(this)" title="Remover este proyecto"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card portafolio-box h-100">
+                        <img src="static/recursos/img/Captura de pantalla 2025-10-31 141136.png" class="card-img-top" alt="Proyecto Semana 20">
+                        <div class="card-body">
+                            <h5 class="card-title">Diseño Responsivo</h5>
+                            <p class="card-text">Implementación de Media Queries y diseño adaptativo.</p>
+                        </div>
+                         <div class="card-footer">
+                            <a href="https://github.com/ethannacarate/galeria" class="btn btn-sm" target="_blank">Ver Código</a>
+                            <i class="fas fa-trash-alt remover-icono" onclick="removerProyecto(this)" title="Remover este proyecto"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacto" id="contacto">
+        <h2 class="heading">Contacta <span>Conmigo</span></h2>
+        <form action="#">
+            <div class="input-caja">
+                <input type="text" placeholder="Nombre Completo" required>
+                <input type="email" placeholder="Correo Electrónico" required>
+            </div>
+            <div class="input-caja">
+                <input type="text" placeholder="Número de Teléfono" required>
+                <input type="text" placeholder="Asunto del Mensaje" required onchange="validarAsunto(this)">
+            </div>
+            <textarea cols="30" rows="10" placeholder="Tu Mensaje" required></textarea>
+            <input type="submit" value="Enviar Mensaje" class="btn">
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-texto">
+            <p>Portafolio de Ethan Nacarate | 2025</p>
+        </div>
+        <div class="footer-icon-top">
+            <a href="#inicio"><i class="fas fa-arrow-up"></i></a>
+        </div>
+    </footer>
+
+    <script src="static/js/script.js"></script>
+</body>
+</html>
